@@ -51,8 +51,10 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-/cnu/
+/cnu
 .vscode/*
+bin/
+cnu.py
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
