@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o sizeof sizeof.c
+CC=clang
+nix = -o bin/sizeof sizeof.c
 win = -o sizeof.exe sizeof.c
 
 ifeq ($(shell uname -s), Windows_NT)

@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o min_sec min_sec.c
+CC=clang
+nix = -o bin/min_sec min_sec.c
 win = -o min_sec.exe min_sec.c
 
 ifeq ($(shell uname -s), Windows_NT)

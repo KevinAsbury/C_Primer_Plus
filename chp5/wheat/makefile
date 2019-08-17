@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o wheat wheat.c
+CC=clang
+nix = -o bin/wheat wheat.c
 win = -o wheat.exe wheat.c
 
 ifeq ($(shell uname -s), Windows_NT)

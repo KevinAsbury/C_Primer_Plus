@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o posmod posmod.c
+CC=clang
+nix = -o bin/posmod posmod.c
 win = -o posmod.exe posmod.c
 
 ifeq ($(shell uname -s), Windows_NT)

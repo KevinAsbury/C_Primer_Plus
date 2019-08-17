@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o golf golf.c
+CC=clang
+nix = -o bin/golf golf.c
 win = -o golf.exe golf.c
 
 ifeq ($(shell uname -s), Windows_NT)

@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o skip2 skip2.c
+CC=clang
+nix = -o bin/skip2 skip2.c
 win = -o skip2.exe skip2.c
 
 ifeq ($(shell uname -s), Windows_NT)

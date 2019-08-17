@@ -1,4 +1,5 @@
 #!/bin/sh
 
-rm -f cnu
+rm -rf bin
+mkdir bin
 make

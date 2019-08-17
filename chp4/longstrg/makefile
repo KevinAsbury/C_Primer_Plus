@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o longstrg longstrg.c
+CC=clang
+nix = -o bin/longstrg longstrg.c
 win = -o longstrg.exe longstrg.c
 
 ifeq ($(shell uname -s), Windows_NT)

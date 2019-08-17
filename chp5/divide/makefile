@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o divide divide.c
+CC=clang
+nix = -o bin/divide divide.c
 win = -o divide.exe divide.c
 
 ifeq ($(shell uname -s), Windows_NT)

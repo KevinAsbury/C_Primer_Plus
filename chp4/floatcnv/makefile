@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o floatcnv floatcnv.c
+CC=clang
+nix = -o bin/floatcnv floatcnv.c
 win = -o floatcnv.exe floatcnv.c
 
 ifeq ($(shell uname -s), Windows_NT)

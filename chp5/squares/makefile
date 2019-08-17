@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o squares squares.c
+CC=clang
+nix = -o bin/squares squares.c
 win = -o squares.exe squares.c
 
 ifeq ($(shell uname -s), Windows_NT)

@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o flags flags.c
+CC=clang
+nix = -o bin/flags flags.c
 win = -o flags.exe flags.c
 
 ifeq ($(shell uname -s), Windows_NT)

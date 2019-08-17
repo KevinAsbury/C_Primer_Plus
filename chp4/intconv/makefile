@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o intconv intconv.c
+CC=clang
+nix = -o bin/intconv intconv.c
 win = -o intconv.exe intconv.c
 
 ifeq ($(shell uname -s), Windows_NT)

@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o prntval prntval.c
+CC=clang
+nix = -o bin/prntval prntval.c
 win = -o prntval.exe prntval.c
 
 ifeq ($(shell uname -s), Windows_NT)

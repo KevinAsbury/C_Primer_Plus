@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o floats floats.c
+CC=clang
+nix = -o bin/floats floats.c
 win = -o floats.exe floats.c
 
 ifeq ($(shell uname -s), Windows_NT)

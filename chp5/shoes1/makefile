@@ -1,7 +1,7 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
-CC=gcc
-nix = -o shoes1 shoes1.c
+CC=clang
+nix = -o bin/shoes1 shoes1.c
 win = -o shoes1.exe shoes1.c
 
 ifeq ($(shell uname -s), Windows_NT)
