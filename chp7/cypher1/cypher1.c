@@ -7,16 +7,12 @@ int main(void)
 {
     char ch;
 
-    ch = getchar(); // read a character
-
-    while (ch != '\n')  // While not end of line
+    while ((ch = getchar()) != '\n')  // While not end of line
     {
         if (ch == SPACE)
             putchar(ch); // leave space unchanged
         else
             putchar(ch + 1); // change the character
-
-        ch = getchar(); // get the next character
     }
 
     putchar(ch);
