@@ -1,7 +1,6 @@
 /* cypher1.c -- alters input, preserving spaces */
 #include <stdio.h>
-
-#define SPACE  ' '
+#include <ctype.h> // for isalpha()
 
 int main(void)
 {
@@ -9,10 +8,10 @@ int main(void)
 
     while ((ch = getchar()) != '\n')  // While not end of line
     {
-        if (ch == SPACE)
-            putchar(ch); // leave space unchanged
-        else
+        if (isalpha(ch))
             putchar(ch + 1); // change the character
+        else
+            putchar(ch); // leave space unchanged
     }
 
     putchar(ch);
