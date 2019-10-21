@@ -1,20 +1,20 @@
 # Use GNU make from CygWin or MinGW if on Windows
 # @echo $(shell uname -s)
 CC=clang
-nix = -o bin/strings strings.c
-win = -o strings.exe strings.c
+nix = -o bin/menuette menuette.c
+win = -o menuette.exe menuette.c
 
 ifeq ($(shell uname -s), Windows_NT)
-strings:
+menuette:
 	$(CC) $(win)
 else ifeq ($(shell uname -s), CYGWIN_NT-10.0)
-strings:
+menuette:
 	$(CC) $(win)
 else ifeq ($(shell uname -s), MINGW32_NT-6.2)
-strings:
+menuette:
 	$(CC) $(win)
 else
-strings:
+menuette:
 	@echo $(shell uname -s)
 	$(CC) $(nix)
 endif
