@@ -1,3 +1,4 @@
+// factor.c -- calculate the factorial of a number
 #include <stdio.h>
 
 long fact(int);
